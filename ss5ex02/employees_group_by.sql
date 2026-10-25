@@ -8,18 +8,12 @@ CREATE TABLE employees (
     salary     INT
 );
 
-INSERT INTO employees VALUES ('NV01', 'Nguyen Van A', 'IT',         15000000);
-INSERT INTO employees VALUES ('NV02', 'Tran Thi B',   'IT',         18000000);
-INSERT INTO employees VALUES ('NV03', 'Le Van C',     'IT',         12000000);
-INSERT INTO employees VALUES ('NV04', 'Pham Thi D',   'IT',         14000000);
-INSERT INTO employees VALUES ('NV05', 'Hoang Van E',  'Sales',       9000000);
-INSERT INTO employees VALUES ('NV06', 'Vu Thi F',     'Sales',      10000000);
-INSERT INTO employees VALUES ('NV07', 'Do Van G',     'Sales',      11000000);
-INSERT INTO employees VALUES ('NV08', 'Bui Thi H',    'Sales',       8000000);
-INSERT INTO employees VALUES ('NV09', 'Dang Van I',   'HR',         10000000);
-INSERT INTO employees VALUES ('NV10', 'Ngo Thi K',    'HR',         13000000);
-INSERT INTO employees VALUES ('NV11', 'Duong Van L',  'Accounting', 12000000);
-INSERT INTO employees VALUES ('NV12', 'Ly Thi M',     'Accounting', 16000000);
+INSERT INTO employees VALUES ('NV01', 'Nguyen Van A', 'IT',    15000000);
+INSERT INTO employees VALUES ('NV02', 'Tran Thi B',   'IT',    18000000);
+INSERT INTO employees VALUES ('NV03', 'Le Van C',     'IT',    12000000);
+INSERT INTO employees VALUES ('NV04', 'Pham Thi D',   'IT',    14000000);
+INSERT INTO employees VALUES ('NV05', 'Hoang Van E',  'Sales',  9000000);
+INSERT INTO employees VALUES ('NV06', 'Vu Thi F',     'Sales', 10000000);
 
 SELECT department, COUNT(*) AS total_employees
 FROM employees
