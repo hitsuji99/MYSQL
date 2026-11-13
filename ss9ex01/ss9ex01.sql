@@ -35,7 +35,6 @@ INSERT INTO customers (customer_name, email, phone, address) VALUES
 ('Tina', 'tina@example.com', '1234567809', '987 Acacia St');
 
 -- 3. TRƯỚC khi tạo index
---    Kết quả mong đợi: type = ALL, key = NULL, rows = 20, Extra = Using where
 EXPLAIN SELECT * FROM customers WHERE email = 'tina@example.com';
 
 -- 4. Tạo Unique Index cho cột email (email không được trùng)
@@ -45,11 +44,9 @@ CREATE UNIQUE INDEX idx_email ON customers (email);
 CREATE INDEX idx_phone ON customers (phone);
 
 -- 6. SAU khi tạo index
---    Kết quả mong đợi: type = const, key = idx_email, key_len = 402, rows = 1
 EXPLAIN SELECT * FROM customers WHERE email = 'tina@example.com';
 
 -- 7. Kiểm tra index phone
---    Kết quả mong đợi: type = ref, key = idx_phone
 EXPLAIN SELECT * FROM customers WHERE phone = '1234567809';
 
 -- 8. Xem danh sách index của bảng
