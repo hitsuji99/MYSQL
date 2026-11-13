@@ -58,10 +58,8 @@ DELIMITER ;
 
 -- Trường hợp 1 (Thất bại): rút 500.000 từ tài khoản có 300.000
 CALL withdraw_money(2, 500000);
--- Mong muốn: vẫn còn 300.000
 SELECT * FROM accounts WHERE account_id = 2;
 
 -- Trường hợp 2 (Thành công): rút 100.000
 CALL withdraw_money(2, 100000);
--- Mong muốn: còn 200.000
 SELECT * FROM accounts WHERE account_id = 2;
