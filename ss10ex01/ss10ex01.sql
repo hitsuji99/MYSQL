@@ -1,4 +1,3 @@
--- [Cơ bản] Ghi lại thay đổi số lượng sản phẩm
 DROP DATABASE IF EXISTS InventoryManagement;
 CREATE DATABASE InventoryManagement;
 USE InventoryManagement;
